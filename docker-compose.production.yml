@@ -28,7 +28,7 @@ services:
     depends_on:
       - db
   gateway:
-    image: denisvaneev/kittygram_nginx
+    image: denisvaneev/kittygram_gateway
     env_file: .env
     volumes:
       - static_volume:/staticfiles/
